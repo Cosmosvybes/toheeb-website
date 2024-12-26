@@ -4,6 +4,7 @@ import Nav from "../Component/Navigation/Navbar/Nav";
 import ReadMorePage from "../Pages/About/ReadMorePage";
 import About from "../Pages/About/About";
 import Activities from "../Pages/Activities/Activities";
+import Footer from "../Component/Footer/Footer";
 const _Routes = () => {
   return (
     <>
@@ -11,9 +12,10 @@ const _Routes = () => {
       <Routes>
         <Route path="/" element={<Landing />}></Route>
         <Route path="/about/me" element={<About />}></Route>
-        <Route path="/activities" element={<Activities/>}></Route>
+        <Route path="/activities" element={<Activities />}></Route>
         <Route path="/blog/post/:id" element={<ReadMorePage />}></Route>
       </Routes>
+      <Footer />
     </>
   );
 };

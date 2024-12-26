@@ -29,11 +29,11 @@
 
 @keyframes main_heading_anime_2 {
   from {
-    transform: rotateX(360deg);
+    transform: translateX(-4px);
     opacity: 0;
   }
   to {
-    transform: translateY(0deg);
+    transform: translateX(0px);
     opacity: 1;
   }
 }
@@ -44,11 +44,12 @@
   animation-delay: 0ms;
 }
 
-.main_btn {
+.arrow-indicator {
   animation-name: main_heading_anime_2;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
   animation-delay: 0s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes postview_anime {

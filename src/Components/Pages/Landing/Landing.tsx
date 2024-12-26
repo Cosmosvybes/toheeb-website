@@ -3,8 +3,12 @@ import img from "../../../assets/pexels-photo-7172984.webp";
 import SectionContainer from "../../Component/Section/SectionContainer";
 import PostSwiper from "../../Component/Section/PostSwiper";
 import ReverseSection from "../../Component/Section/ReverserSection";
+import { useEffect } from "react";
 
 const Landing = () => {
+  useEffect(() => {
+    return window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <main className="h-screen flex justify-between items-center bg-amber-100 max-sm:flex-col max-sm:h-auto">
@@ -28,7 +32,7 @@ main_image  h-[35rem] rounded-2xl"
         </div>{" "}
         <div className="relative w-1/2 max-sm:w-full">
           <div className="relative  flex justify-center items-center  max-sm:px-4 max-sm:py-4 py-24 px-20 h-full">
-            <div className="relative w-full  flex gap-3 flex-col ">
+            <div className="relative w-full  flex gap-2 flex-col ">
               <h1 className="text-green-900 main_h1 text-5xl max-sm:text-2xl font-extrabold">
                 {" "}
                 I'm <em className="text-black ">TOHEEB. </em>
@@ -37,9 +41,9 @@ main_image  h-[35rem] rounded-2xl"
                 {" "}
                 I welcome you to my official website and events page.
               </p>
-              <button className="px-5 w-72 border  main_btn rounded-md py-3 font-semibold bg-transparent backdrop-blur-md text-lime-500 border-lime-500  text-xl max-sm:w-52 max-sm:text-sm max-sm:py-1 hover:text-green-900  hover:bg-lime-400   ">
-                Explore
-                <ArrowRight className="inline text-3xl text-lime-400" />
+              <button className="px-5 w-72   rounded-md py-3 font-bold bg-lime-400 text-green-950   text-2xl max-sm:w-auto max-sm:text-xl max-sm:py-1 hover:text-green-900  hover:bg-lime-400   ">
+                Let's explore
+                <ArrowRight className="inline text-3xl   arrow-indicator text-green-950" />
               </button>
             </div>
           </div>

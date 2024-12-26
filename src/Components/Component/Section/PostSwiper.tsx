@@ -7,7 +7,7 @@ import { ArrowRight } from "react-huge-icons/solid";
 const PostSwiper = () => {
   return (
     <>
-      <section className="relative px-20 py-10 max-sm:px-2 max-sm:py-5 h-auto justify-center items-center  border">
+      <section className="relative px-20 bg-amber-200 py-10 max-sm:px-2 max-sm:py-5 h-auto justify-center items-center  border">
         <h1 className="text-xl text-lime-600">
           LATEST ACTIVITIES{" "}
           <ArrowRight className="inline text-4xl text-lime-500" />
@@ -68,7 +68,7 @@ const PostSwiper = () => {
             },
           ].map((_, i) => (
             <SwiperSlide
-              className="flex  py-2 justify-center items-center"
+              className="flex py-2 justify-center items-center"
               key={i}
             >
               <PostCard id={_.id} />

@@ -56,6 +56,7 @@ const Nav = () => {
             <Link
               className="text-xl no-underline max-sm:text-md font flex justify-start gap-2 items-center  font-normal text-green-950"
               to={"/"}
+              onClick={handleToggle}
             >
               {" "}
               <Home className="inline top-3  right-3 text-lime-500 text-2xl" />{" "}
@@ -64,12 +65,14 @@ const Nav = () => {
             <Link
               className="text-xl no-underline max-sm:text-md font  flex justify-start gap-2 font-normal text-green-950"
               to={"/about/me"}
+              onClick={handleToggle}
             >
               {" "}
               <LinkUnlink className="inline top-3  right-3 text-lime-500 text-2xl" />{" "}
               About me
             </Link>
             <Link
+              onClick={handleToggle}
               className="text-xl max-sm:text-md font-normal flex justify-start gap-2 no-underline text-green-950"
               to={"/activities"}
             >
@@ -84,8 +87,8 @@ const Nav = () => {
             }`}
           >
             <button
-              onClick={handleConnectModal}
-              className="text-2xl font-normal  bg-lime-400  rounded-md py-2  px-2 w-full text-green-950"
+              onClick={handleToggle}
+              className="text-2xl font-normal  bg-lime-400   rounded-md py-2  px-2 w-full text-green-950"
             >
               {" "}
               connect{" "}
@@ -138,11 +141,6 @@ const Nav = () => {
           ))}
           <button
             onClick={handleConnectModal}
-            style={{
-              transition: "0.5s ease-in-out",
-              visibility: isOpen ? "visible" : "hidden",
-              opacity: isOpen ? "1" : "0",
-            }}
             className="text-2xl font-normal w-44  bg-lime-400  rounded-md py-2  px-2  text-green-950"
           >
             {" "}

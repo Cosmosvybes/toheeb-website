@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import SectionContainer from "../../Component/Section/SectionContainer";
 
 const About = () => {
+  useEffect(() => {
+    return window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="h-auto flex justify-start  flex-col">
       <SectionContainer

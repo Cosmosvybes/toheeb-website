@@ -7,15 +7,15 @@ interface postCardInterfac {
 const PostCard = ({ id }: postCardInterfac) => {
   return (
     <>
-      <div className="h-[auto]  w-full bg-amber-50  rounded-2xl  flex flex-col justify-between ">
-        <div className="relative w-full h-1/2 px-2 ">
+      <div className="h-[auto]  w-full bg-amber-100 py-0  rounded-md  flex flex-col justify-between ">
+        <div className="relative w-full  h-3/5 px-2 ">
           <img
             src={`https://unsplash.com/photos/a-woman-walking-down-a-sidewalk-next-to-parked-bikes-YsEyBKY22Fo`}
             alt="photo"
-            className="h-44 w-full object-contain rounded-t-2xl"
+            className="h-[20rem] w-full object-contain rounded-t-2xl"
           />
         </div>
-        <div className="relative flex flex-col justify-start  gap-5 px-2">
+        <div className="relative flex flex-col justify-start  gap-2 px-2">
           <h1>THE POST TITLE</h1>
           <div className="relative flex justify-start items-center max-sm:flex-col max-sm:gap-0  max-sm:items-start [">
             <p className="max-sm:text-sm">

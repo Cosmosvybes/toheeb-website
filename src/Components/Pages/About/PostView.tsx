@@ -7,14 +7,15 @@ interface postVIewInterface {
 }
 
 const PostView = ({ headline, postTitle }: postVIewInterface) => {
-  console.log(headline, postTitle);
+
 
   useEffect(() => {
     return window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
   return (
     <>
-      <div className="relative postView h-screen max-sm:flex-col max-sm:h-auto flex justify-start items-start py-10">
+      <div className="relative postView bg-amber-100 h-screen max-sm:flex-col max-sm:h-auto flex justify-start items-start ">
         <div className="relative h-[39rem] max-sm:h-[25rem] border w-1/2 max-sm:w-full rounded-md "></div>
 
         <div className="relative h-[39rem] w-1/2 flex justify-start max-sm:w-full items-start gap-4">
