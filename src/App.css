@@ -1,3 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=SUSE&display=swap");
+
+@keyframes main_element_1 {
+  from {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.main_image {
+  animation-name: main_element_1;
+  animation-delay: 0ms;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes main_heading_anime {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes main_heading_anime_2 {
+  from {
+    transform: rotateX(360deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0deg);
+    opacity: 1;
+  }
+}
+.main_h1 {
+  animation-name: main_heading_anime;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0ms;
+}
+
+.main_btn {
+  animation-name: main_heading_anime_2;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+
+@keyframes postview_anime {
+  from {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.postView {
+  animation-name: postview_anime;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.top-layer {
+  transition: 0.4s ease-out;
+}
+.lower-layer {
+  transition: 0.9s ease-in;
+}
+
+html,
+body,
+p,
+h1 {
+  font-family: "Nunito Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
