@@ -2,7 +2,7 @@ import "./App.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "swiper/modules/pagination.css"
+
 import _Routes from "./Components/Routes/_Routes";
 function App() {
   return (
