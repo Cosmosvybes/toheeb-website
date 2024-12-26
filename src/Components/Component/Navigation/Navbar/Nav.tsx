@@ -87,7 +87,7 @@ const Nav = () => {
             }`}
           >
             <button
-              onClick={handleToggle}
+              onClick={handleConnectModal}
               className="text-2xl font-normal  bg-lime-400   rounded-md py-2  px-2 w-full text-green-950"
             >
               {" "}
