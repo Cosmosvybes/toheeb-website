@@ -4,6 +4,7 @@ import "swiper/css/pagination";
 import { Pagination, Parallax } from "swiper/modules";
 import PostCard from "./PostCard";
 import { ArrowRight } from "react-huge-icons/solid";
+import "swiper/swiper.css";
 const PostSwiper = () => {
   return (
     <>
