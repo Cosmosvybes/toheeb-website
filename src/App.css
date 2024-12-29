@@ -39,9 +39,16 @@
 }
 .main_h1 {
   animation-name: main_heading_anime;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
   animation-delay: 0ms;
+}
+
+.main_h1_two {
+  animation-name: main_heading_anime;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1ms;
 }
 
 .arrow-indicator {

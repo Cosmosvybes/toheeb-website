@@ -11,6 +11,7 @@ import {
   Home,
   LinkUnlink,
   DocumentText,
+  MailFast,
 } from "react-huge-icons/solid";
 import { Link } from "react-router-dom";
 const Nav = () => {
@@ -32,10 +33,29 @@ const Nav = () => {
           <b className="text-lime-500 text-center">Let's connect - </b>
         </ModalHeader>
 
-        <ModalBody className="grid grid-cols-3 gap-5 ">
-          <Linkedln className="text-3xl text-lime-400" />
-          <Whatsapp className="text-3xl text-lime-400" />{" "}
-          <Instagram className="text-3xl text-lime-400" />
+        <ModalBody className="grid grid-cols-4 gap-10 ">
+          <Linkedln
+            className="text-3xl text-lime-400"
+            onClick={() => {
+              window.open("https://www.linkedin.com/in/toyeebadebisi1/");
+            }}
+          />
+          <Whatsapp
+            className="text-3xl text-lime-400"
+            onClick={() => {
+              window.open("https://www.linkedin.com/in/toyeebadebisi1/");
+            }}
+          />{" "}
+          <Instagram
+            className="text-3xl text-lime-400"
+            onClick={() => {
+              window.open("https://www.instagram.com/teone.live");
+            }}
+          />
+          <a href="mailto:toyeebadebisi1@gmail.com">
+            {" "}
+            <MailFast className="text-3xl text-lime-400" />
+          </a>
         </ModalBody>
       </Modal>
       <nav className="bg-gradient-to-tr px-2 z-50 from-green-950 to-black h-28 max-sm:h-20 sticky left-0 top-0 items-center flex justify-between py-10 ">

@@ -1,15 +1,19 @@
-import img from "../../../assets/pexels-photo-7172984.webp";
+// import img from "../../../assets/pexels-photo-7172984.webp";
 
 interface SectionCompProps {
   headline: string;
   shortTitle: string;
   showReadMore: boolean;
+  textContent: string;
+  img: string;
 }
 
 const SectionContainer = ({
   headline,
   shortTitle,
   showReadMore,
+  textContent,
+  img,
 }: SectionCompProps) => {
   return (
     <div
@@ -29,26 +33,8 @@ const SectionContainer = ({
         <h1 className="text-6xl max-sm:text-4xl text-green-800 font-extrabold">
           {shortTitle}
         </h1>
-        <p className="text-xl max-sm:text-sm font-normal">
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p className="text-xl max-sm:text-sm  font-normal">
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <p className="text-xl max-sm:text-sm font-normal">{textContent}</p>
+
         {showReadMore && (
           <button className="text-xl bg-lime-400 rounded-md text-green-950 w-52 py-3 px-2">
             {" "}
