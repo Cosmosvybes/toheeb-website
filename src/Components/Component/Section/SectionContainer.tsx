@@ -1,10 +1,10 @@
-// import img from "../../../assets/pexels-photo-7172984.webp";
-
 interface SectionCompProps {
   headline: string;
   shortTitle: string;
   showReadMore: boolean;
-  textContent: string;
+  p1: string;
+  p2?: string;
+  p3?: string;
   img: string;
 }
 
@@ -12,7 +12,9 @@ const SectionContainer = ({
   headline,
   shortTitle,
   showReadMore,
-  textContent,
+  p1,
+  p2,
+  p3,
   img,
 }: SectionCompProps) => {
   return (
@@ -27,18 +29,20 @@ const SectionContainer = ({
           backgroundRepeat: "no-repeat",
         }}
       ></div>
-      <div className="relative w-1/2  max-sm:w-full max-sm:px-2 flex flex-col max-sm:gap-5 justify-start  gap-10 h-1/2">
+      <div className="relative w-1/2  max-sm:w-full max-sm:px-2 flex flex-col max-sm:gap-5 justify-start  gap-3 h-1/2">
         <h1 className="  text-xl text-lime-600">{headline}</h1>
 
         <h1 className="text-6xl max-sm:text-4xl text-green-800 font-extrabold">
           {shortTitle}
         </h1>
-        <p className="text-xl max-sm:text-sm font-normal">{textContent}</p>
+        <p className="text-xl max-sm:text-sm font-normal">{p1}</p>
+        <p className="text-xl max-sm:text-sm font-normal">{p2}</p>
+        <p className="text-xl max-sm:text-sm font-normal">{p3}</p>
 
         {showReadMore && (
-          <button className="text-xl bg-lime-400 rounded-md text-green-950 w-52 py-3 px-2">
+          <button className="text-xl   text-lime-500 rounded-md inline w-1/2 text-left ">
             {" "}
-            Read More
+            read more
           </button>
         )}
       </div>
