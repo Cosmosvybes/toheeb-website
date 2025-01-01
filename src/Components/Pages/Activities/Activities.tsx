@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import PostSwiper from "../../Component/Section/PostSwiper";
 import ReverseSection from "../../Component/Section/ReverserSection";
-
+import img from "../../../assets/new-toheeb.jpg";
 const Activities = () => {
   useEffect(() => {
     return window.scrollTo({ top: 0, behavior: "smooth" });
@@ -10,7 +10,7 @@ const Activities = () => {
     <div>
       <ReverseSection
         showLink={false}
-        img=""
+        img={img}
         showReadMore={false}
         headline="Explore my recent activities"
         shortTitle="RECENT ACTIVITIES"
