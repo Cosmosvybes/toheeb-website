@@ -99,7 +99,7 @@ main_image  h-[35rem] rounded-2xl"
         headline="DIGITAL"
       />
       <ReverseSection
-        showLink={false}
+        showLink={true}
         p1={`My Journey with capturing the amount of GHGs commenced in 2024. 
 Inspired by the course below:`}
         showReadMore={false}

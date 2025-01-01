@@ -9,9 +9,12 @@ const Activities = () => {
   return (
     <div>
       <ReverseSection
+        showLink={false}
+        img=""
         showReadMore={false}
         headline="Explore my recent activities"
         shortTitle="RECENT ACTIVITIES"
+        p1=""
       />
       <PostSwiper />
     </div>
