@@ -8,6 +8,7 @@ const About = () => {
   return (
     <div className="h-auto flex justify-start  flex-col">
       <SectionContainer
+        showDigital={false}
         showReadMore={true}
         shortTitle={"ABOUT ME"}
         headline="MEET TOHEEB"

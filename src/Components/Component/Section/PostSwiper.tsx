@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Parallax } from "swiper/modules";
 import PostCard from "./PostCard";
 import { ArrowRight } from "react-huge-icons/solid";
-
+import postImage from "../../../assets/evntImage.jpg";
 const PostSwiper = () => {
   return (
     <>
-      <section className="relative px-20 bg-amber-200 py-10 max-sm:px-2 max-sm:py-5 h-auto justify-center items-center  border">
+      <section className="relative px-20 bg-amber-50 py-10 max-sm:px-2 max-sm:py-5 h-auto justify-center items-center  ">
         <h1 className="text-xl text-lime-600">
           LATEST ACTIVITIES{" "}
           <ArrowRight className="inline text-4xl text-lime-500" />
@@ -43,34 +43,20 @@ const PostSwiper = () => {
           {[
             {
               id: 1,
-              title: "The heist",
-              descr:
-                "This is soome sort of short description about this contents and what you are like to get when you open it.",
-            },
-            {
-              id: 2,
-              title: "The Kingdom of heaven",
-              descr:
-                "This is soome sort of short description about this contents and what you are like to get when you open it.",
-            },
-            {
-              id: 21,
-              title: "The fairy tales",
-              descr:
-                "This is soome sort of short description about this contents and what you are like to get when you open it.",
-            },
-            {
-              id: 4,
-              title: "The heist Mullock",
-              descr:
-                "This is soome sort of short description about this contents and what you are like to get when you open it.",
+              title: "The  Climate Change Forum",
+              descr: "New Castle City Council  Climate Change Forum",
             },
           ].map((_, i) => (
             <SwiperSlide
               className="flex py-2 justify-center items-center"
               key={i}
             >
-              <PostCard id={_.id} />
+              <PostCard
+                img={postImage}
+                id={_.id}
+                postTitle={_.title}
+                shortDescription={_.descr}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

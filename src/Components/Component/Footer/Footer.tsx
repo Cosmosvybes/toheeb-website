@@ -3,7 +3,7 @@ import { Linkedln, Instagram, Twitter } from "react-huge-icons/solid";
 const Footer = () => {
   return (
     <>
-      <footer className="h-auto">
+      <footer className="h-auto ">
         <div className=" h-[0.5rem] bg-lime-500"></div>
 
         <div className="relative h-[40rem] flex justify-center items-center bg-gradient-to-tr from-black to-green-950">
@@ -60,8 +60,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="relative text-center py-3 flex justify-center items-center max-sm:px-2 max-md:px-0 bg-lime-500 ">
-          <p className=" font-normal max-sm:text-sm  max-md:text-xl text-green-950 text-2xl">
+        <div className="relative text-center  py-2 flex justify-center items-center max-sm:px-2 max-md:px-0 bg-amber-200 ">
+          <p className=" font-normal max-sm:text-sm  max-md:text-xl text-green-900 text-2xl">
             Toheeb • {new Date().getFullYear()} &reg;
           </p>
         </div>

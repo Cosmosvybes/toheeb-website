@@ -1,46 +1,52 @@
-import img from "../../../assets/pexels-photo-7172984.webp";
+// import img from "../../../assets/pexels-photo-7172984.webp";
 
 interface SectionCompProps {
   headline: string;
   shortTitle: string;
   showReadMore: boolean;
+  img: string;
+  p1: string;
+  showLink: boolean;
 }
 
 const ReverseSection = ({
   headline,
   shortTitle,
   showReadMore,
+  img,
+  p1,
+  showLink,
 }: SectionCompProps) => {
   return (
     <div
       className={`h-auto    flex justify-between max-sm:flex-col-reverse max-sm:py-2 items-start max-sm:px-2 py-24 px-24 gap-5 bg-amber-100`}
     >
-      <div className="relative w-1/2  max-sm:w-full max-sm:px-2 flex flex-col max-sm:gap-5 justify-start  gap-10 h-1/2">
+      <div className="relative w-1/2  max-sm:w-full max-sm:px-2 flex flex-col max-sm:gap-3 justify-start  gap-10 h-1/2">
         <h1 className="  text-xl text-lime-600">{headline}</h1>
 
-        <h1 className="text-6xl max-sm:text-4xl text-green-800 font-extrabold">
+        <h1 className="text-6xl max-sm:text-xl text-green-800 font-extrabold">
           {shortTitle}
         </h1>
-        <p className="text-xl max-sm:text-sm font-normal">
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <p className="text-4xl text-green-800 max-sm:text-2xl font-normal">
+          {p1}
         </p>
-        <p className="text-xl max-sm:text-sm  font-normal">
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        {showLink && (
+          <div className="relative h-auto py-3  bg-amber-100  max-sm:px-0">
+            <ul className="list-disc  max-sm:text-2xl text-3xl">
+              <li className="text-green-800">
+                Sustainability Foundations: Core Concepts -{" "}
+                <a
+                  className="no-underline "
+                  href="https://www.linkedin.com/learning/certificates/76694d22d491201714c2c3776cc52b0dba245f6e7d2f5bfe26b436264528051e?u=137171972"
+                ></a>{" "}
+                LinkedIn Learning Which resulted in ;{" "}
+                <a className="no-underline" href="https://thenetzeroguy.com">
+                  Thenetzeroguy.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
         {showReadMore && (
           <button className="text-xl bg-lime-400 rounded-md text-green-950 w-52 py-3 px-2">
             {" "}

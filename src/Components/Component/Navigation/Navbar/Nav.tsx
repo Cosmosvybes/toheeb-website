@@ -30,35 +30,35 @@ const Nav = () => {
     <>
       <Modal centered toggle={handleConnectModal} isOpen={toggle}>
         <ModalHeader className="text-center">
-          <b className="text-lime-500 text-center">Let's connect - </b>
+          <b className="text-green-800 text-center">Let's connect - </b>
         </ModalHeader>
 
         <ModalBody className="grid grid-cols-4 gap-10 ">
           <Linkedln
-            className="text-3xl text-lime-400"
+            className="text-3xl text-green-950"
             onClick={() => {
               window.open("https://www.linkedin.com/in/toyeebadebisi1/");
             }}
           />
           <Whatsapp
-            className="text-3xl text-lime-400"
+            className="text-3xl text-green-950"
             onClick={() => {
               window.open("https://www.linkedin.com/in/toyeebadebisi1/");
             }}
           />{" "}
           <Instagram
-            className="text-3xl text-lime-400"
+            className="text-3xl text-green-950"
             onClick={() => {
               window.open("https://www.instagram.com/teone.live");
             }}
           />
           <a href="mailto:toyeebadebisi1@gmail.com">
             {" "}
-            <MailFast className="text-3xl text-lime-400" />
+            <MailFast className="text-3xl text-green-950" />
           </a>
         </ModalBody>
       </Modal>
-      <nav className="bg-gradient-to-tr px-2 z-50 from-green-950 to-black h-28 max-sm:h-20 sticky left-0 top-0 items-center flex justify-between py-10 ">
+      <nav className="bg-gradient-to-tr px-2 z-50 bg-amber-100 h-28 max-sm:h-20 sticky left-0 top-0 items-center flex justify-between py-10 ">
         <div
           className={`absolute top-0 left-0 lower-layer flex justify-between  flex-col  z-20  bg-transparent backdrop-blur-md h-screen   ${
             isOpen ? "w-[16rem]" : "w-[0px]"
@@ -79,40 +79,41 @@ const Nav = () => {
               onClick={handleToggle}
             >
               {" "}
-              <Home className="inline top-3  right-3 text-lime-500 text-2xl" />{" "}
+              <Home className="inline top-3  right-3 text-amber-500 text-2xl" />{" "}
               Home
             </Link>
-            <Link
-              className="text-xl no-underline max-sm:text-md font  flex justify-start gap-2 font-normal text-green-950"
-              to={"/about/me"}
-              onClick={handleToggle}
-            >
-              {" "}
-              <LinkUnlink className="inline top-3  right-3 text-lime-500 text-2xl" />{" "}
-              About me
-            </Link>
+            {false && (
+              <Link
+                className="text-xl no-underline max-sm:text-md font  flex justify-start gap-2 font-normal text-green-950"
+                to={"/about/me"}
+                onClick={handleToggle}
+              >
+                <LinkUnlink className="inline top-3  right-3 text-amber-500 text-2xl" />{" "}
+                About me
+              </Link>
+            )}
             <Link
               onClick={handleToggle}
               className="text-xl max-sm:text-md font-normal flex justify-start gap-2 no-underline text-green-950"
               to={"/activities"}
             >
-              <DocumentText className="inline top-3  right-3 text-lime-500 text-2xl" />{" "}
+              <DocumentText className="inline top-3  right-3 text-amber-500 text-2xl" />{" "}
               Activities
             </Link>
           </div>
 
           <div
             className={`relative mb-5 px-5 w-full  ${
-              !isOpen ? "hidden" : "block"
+              isOpen ? "block" : "hidden"
             }`}
           >
             <button
               onClick={handleConnectModal}
-              className="text-2xl font-normal  bg-lime-400   rounded-md py-2  px-2 w-full text-green-950"
+              className="text-2xl font-normal bg-amber-500 text-green-800  rounded-md py-2  px-2 w-full "
             >
               {" "}
               connect{" "}
-              <CallUser className="inline top-3  right-3 text-lime-500 text-2xl" />
+              <CallUser className="inline top-3  right-3 text-green-800 text-2xl" />
             </button>
           </div>
         </div>
@@ -124,14 +125,14 @@ const Nav = () => {
         >
           {" "}
           <RemoveRectangle
-            className="absolute top-3  right-3 text-lime-500 text-5xl"
+            className="absolute top-3  right-3 text-amber-500 text-5xl"
             onClick={handleToggle}
           />
         </div>
 
-        <div className="relative h-14 w-14 rounded-full  hidden max-sm:flex justify-center items-center bg-lime-400 ">
+        <div className="relative h-14 w-14 rounded-full  hidden max-sm:flex justify-center items-center bg-amber-200 ">
           <MenuLineHorizontal
-            className="text-green-950 text-5xl  hidden max-sm:block"
+            className="text-lime-600 text-5xl  hidden max-sm:block"
             onClick={handleToggle}
           />
         </div>
@@ -146,8 +147,8 @@ const Nav = () => {
               to={_.path}
               key={i}
               className={` ${
-                _.textNode != "connect" && "text-white"
-              }  w-1/3 py-3 duration-500 transition-transform  no-underline text-center font-semibold text-xl shadow-gray-200 hover:text-white border-white  hover:font-normal ${
+                _.textNode == "connect" && "text-green-800"
+              }  w-1/3 py-3 duration-500 transition-transform  text-green-950 no-underline text-center font-semibold text-xl shadow-gray-200 hover:text-white border-white  hover:font-normal ${
                 _.textNode == "connect"
                   ? "text-green-950 rounded-md py-3 font-semibold bg-lime-400"
                   : "hover:text-white bg-transparent  rounded-md  "
@@ -161,14 +162,14 @@ const Nav = () => {
           ))}
           <button
             onClick={handleConnectModal}
-            className="text-2xl font-normal w-44  bg-lime-400  rounded-md py-2  px-2  text-green-950"
+            className="text-2xl font-normal w-44  bg-amber-300 text-green-800  rounded-md py-2  px-2  "
           >
             {" "}
             connect{" "}
-            <CallUser className="inline top-3  right-3 text-lime-500 text-2xl" />
+            <CallUser className="inline top-3  right-3 text-green-800 text-2xl" />
           </button>
         </div>
-        <span>Logo</span>
+        <span className="opacity-0">Logo</span>
       </nav>
     </>
   );
