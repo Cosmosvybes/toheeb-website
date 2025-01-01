@@ -9,7 +9,7 @@ const Partners = () => {
           <UsersTriple className="text-7xl max-sm:text-4xl text-green-900 inline" />{" "}
           Partners{" "}
         </h1>
-        <div className="relative flex w-full px-20 max-sm:px-2  max-sm:flex-col  justify-around items-center">
+        <div className="relative flex w-full px-20 max-sm:px-1 max-md:px-4  max-sm:flex-col max-md:flex-col  justify-around items-center">
           <div
             className="relative w-[32rem] bg-cover rounded-xl max-sm:bg-cover max-sm:w-full  h-44"
             style={{

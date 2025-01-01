@@ -19,9 +19,9 @@ const ReverseSection = ({
 }: SectionCompProps) => {
   return (
     <div
-      className={`h-auto    flex justify-between max-sm:flex-col-reverse max-sm:py-2 items-start max-sm:px-2 py-24 px-24 gap-5 bg-amber-100`}
+      className={`h-auto max-md:px-4 max-md:flex-col flex justify-between max-sm:flex-col-reverse max-sm:py-2 items-start max-sm:px-2 py-24  px-24 gap-5 bg-amber-100`}
     >
-      <div className="relative w-1/2  max-sm:w-full max-sm:px-2 flex flex-col max-sm:gap-3 justify-start  gap-10 h-1/2">
+      <div className="relative w-1/2  max-sm:w-full max-md:w-full max-sm:px-2 flex flex-col max-sm:gap-3 justify-start  gap-10 h-1/2">
         <h1 className="  text-xl text-lime-600">{headline}</h1>
 
         <h1 className="text-6xl max-sm:text-xl text-green-800 font-extrabold">
@@ -56,7 +56,7 @@ const ReverseSection = ({
       </div>
 
       <div
-        className="relative h-[37rem] max-sm:w-full bg-cover max-sm:bg-cover max-sm:h-72  bg-gray-50 rounded-2xl  w-1/2"
+        className="relative h-[37rem] max-sm:w-full max-md:w-full bg-cover max-sm:bg-cover max-sm:h-72  bg-gray-50 rounded-2xl  w-1/2"
         style={{
           backgroundImage: `url(${img})`,
 

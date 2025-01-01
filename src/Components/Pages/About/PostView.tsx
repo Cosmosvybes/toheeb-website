@@ -13,9 +13,9 @@ const PostView = ({ headline, postTitle }: postVIewInterface) => {
 
   return (
     <>
-      <div className="relative postView bg-amber-100 px-2 h-screen max-sm:flex-col max-sm:h-auto flex justify-start items-start ">
+      <div className="relative postView bg-amber-100 px-2 h-screen max-md:flex-col max-sm:flex-col max-sm:h-auto flex justify-start items-start ">
         <div
-          className="relative h-[37rem] max-sm:w-full bg-cover max-sm:bg-cover max-sm:h-[35rem]  bg-gray-50 rounded-2xl  w-1/2"
+          className="relative h-[37rem] max-sm:w-full bg-cover max-sm:bg-cover max-sm:h-[35rem]  bg-gray-50 rounded-2xl max-md:w-full w-1/2"
           style={{
             backgroundImage: `url(${toheeb})`,
 
@@ -23,7 +23,7 @@ const PostView = ({ headline, postTitle }: postVIewInterface) => {
           }}
         ></div>
 
-        <div className="relative h-[39rem] w-1/2 flex justify-start max-sm:w-full items-start gap-4">
+        <div className="relative h-[39rem] w-1/2 max-md:w-full flex justify-start max-sm:w-full items-start gap-4">
           <div className="relative w-full  px-2 max-sm:w-full max-sm:px-2 flex flex-col max-sm:gap-5 justify-start  gap-10 h-full">
             <h1 className="  text-xl max-sm:text-sm mt-2 text-lime-600">
               {headline}

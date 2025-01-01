@@ -23,17 +23,17 @@ const SectionContainer = ({
 }: SectionCompProps) => {
   return (
     <div
-      className={`h-auto border  flex justify-between max-sm:flex-col max-sm:py-2 items-start max-sm:px-2 py-10 px-24 gap-5 bg-amber-100`}
+      className={`h-auto border max-md:px-4 max-md:flex-col  flex justify-between max-sm:flex-col max-sm:py-2 items-start max-sm:px-2 py-10 px-24 gap-5 bg-amber-100`}
     >
       <div
-        className="relative h-[44rem] max-sm:w-full bg-cover max-sm:bg-cover max-sm:h-[28rem]  bg-gray-50 rounded-2xl  w-1/2"
+        className="relative h-[44rem] max-sm:w-full max-md:w-full bg-cover max-sm:bg-cover max-sm:h-[28rem]  bg-gray-50 rounded-2xl  w-1/2"
         style={{
           backgroundImage: `url(${img})`,
 
           backgroundRepeat: "no-repeat",
         }}
       ></div>
-      <div className="relative w-1/2  max-sm:w-full max-sm:px-2 flex flex-col max-sm:gap-5 justify-start  gap-4 h-[auto]">
+      <div className="relative w-1/2 max-md:w-full  max-sm:w-full max-sm:px-2 flex flex-col max-sm:gap-5 justify-start  gap-4 h-[auto]">
         <h1 className="  text-xl text-lime-600">{headline}</h1>
 
         <h1 className="text-6xl max-sm:text-2xl text-green-800 font-extrabold">

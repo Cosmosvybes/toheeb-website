@@ -15,7 +15,7 @@ const PostCard = ({
 }: postCardInterfac) => {
   return (
     <>
-      <div className="h-[auto]  w-full bg-amber-100 py-1  rounded-md  flex flex-col justify-between ">
+      <div className="h-[auto]  w-full bg-amber-100 py-1   rounded-md  flex flex-col justify-between ">
         <div
           className="relative bg-cover max-sm:bg-container w-full  h-[30rem] px-2"
           style={{

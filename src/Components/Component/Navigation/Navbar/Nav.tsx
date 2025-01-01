@@ -33,7 +33,7 @@ const Nav = () => {
           <b className="text-green-800 text-center">Let's connect - </b>
         </ModalHeader>
 
-        <ModalBody className="grid grid-cols-4 gap-10 ">
+        <ModalBody className="grid grid-cols-4 gap-10  bg-amber-500">
           <Linkedln
             className="text-3xl text-green-950"
             onClick={() => {
@@ -58,9 +58,9 @@ const Nav = () => {
           </a>
         </ModalBody>
       </Modal>
-      <nav className="bg-gradient-to-tr px-2 z-50 bg-amber-100 h-28 max-sm:h-20 sticky left-0 top-0 items-center flex justify-between py-10 ">
+      <nav className="bg-gradient-to-tr px-2 z-50  bg-amber-100 h-28 max-sm:h-20 sticky left-0 top-0 items-center flex justify-between py-10 ">
         <div
-          className={`absolute top-0 left-0 lower-layer flex justify-between  flex-col  z-20  bg-transparent backdrop-blur-md h-screen   ${
+          className={`absolute top-0 left-0 lower-layer flex justify-between   flex-col  z-20  bg-transparent backdrop-blur-md h-screen   ${
             isOpen ? "w-[16rem]" : "w-[0px]"
           }  `}
           style={{ transition: "0.4s ease-in" }}
@@ -119,7 +119,7 @@ const Nav = () => {
         </div>
 
         <div
-          className={`absolute top-0 left-0 lower-layer z-10   duration-1000 bg-transparent backdrop-blur-lg h-screen  ${
+          className={`absolute top-0 left-0 lower-layer z-10    duration-1000 bg-transparent backdrop-blur-lg h-screen  ${
             isOpen ? "w-[21rem]" : "w-[0px]"
           } `}
         >
@@ -130,17 +130,16 @@ const Nav = () => {
           />
         </div>
 
-        <div className="relative h-14 w-14 rounded-full  hidden max-sm:flex justify-center items-center bg-amber-200 ">
+        <div className="relative h-14 w-14 rounded-full max-md:flex  hidden max-sm:flex justify-center items-center bg-amber-200 ">
           <MenuLineHorizontal
-            className="text-lime-600 text-5xl  hidden max-sm:block"
+            className="text-lime-600 text-5xl max-md:block   hidden max-sm:block"
             onClick={handleToggle}
           />
         </div>
 
-        <div className="relative px-4 z-10 gap-2 max-sm:hidden flex justify-end  w-1/3">
+        <div className="relative px-4 z-10 max-md:hidden gap-2 max-sm:hidden flex justify-end max-md:w-full  w-1/3">
           {[
             { id: 1, path: "/", textNode: "Home" },
-            { id: 1, path: "/about/me", textNode: "About me" },
             { id: 2, path: "/activities", textNode: "Activities" },
           ].map((_, i) => (
             <Link
@@ -148,7 +147,7 @@ const Nav = () => {
               key={i}
               className={` ${
                 _.textNode == "connect" && "text-green-800"
-              }  w-1/3 py-3 duration-500 transition-transform  text-green-950 no-underline text-center font-semibold text-xl shadow-gray-200 hover:text-white border-white  hover:font-normal ${
+              }  w-1/3 py-3 duration-500 transition-transform  text-green-950 no-underline text-center font-semibold text-xl shadow-gray-200 hover:text-amber-500 border-white  hover:font-normal ${
                 _.textNode == "connect"
                   ? "text-green-950 rounded-md py-3 font-semibold bg-lime-400"
                   : "hover:text-white bg-transparent  rounded-md  "

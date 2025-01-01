@@ -14,8 +14,8 @@ const Landing = () => {
   }, []);
   return (
     <>
-      <main className="h-screen flex justify-between items-center bg-amber-100 max-sm:flex-col max-sm:h-auto">
-        <div className="relative    w-1/2 max-sm:w-full  py-24 max-sm:px-4 max-sm:py-4 px-20 h-auto ">
+      <main className="h-auto flex justify-between items-center bg-amber-100 max-sm:flex-col max-md:flex-col max-sm:h-auto">
+        <div className="relative    w-1/2 max-sm:w-full max-md:px-2 max-md:w-full  py-24 max-sm:px-4 max-sm:py-4 px-20 h-auto ">
           <div
             className="relative bg-cover max-sm:bg-cover flex flex-col   max-sm:h-60   justify-start items-start 
 main_image  h-[35rem] rounded-2xl"
@@ -29,19 +29,19 @@ main_image  h-[35rem] rounded-2xl"
               style={{ borderTop: "4px lightgreen" }}
               className=" max-sm:text-2xl h-20 max-sm:h-14 rounded-none   bg-white py-2 px-3   z-10"
             >
-              <h1 className="text-green-800  main_h1 text-5xl max-sm:text-2xl font-extrabold">
+              <h1 className="text-amber-500  main_h1 text-5xl max-sm:text-2xl font-extrabold">
                 {" "}
                 Hi <em className="text-black ">there, </em>
               </h1>
             </div>
           </div>
         </div>{" "}
-        <div className="relative w-1/2  max-sm:w-full">
-          <div className="relative  flex justify-center items-center  max-sm:px-4 max-sm:py-4 py-24 px-20 h-full">
-            <div className="relative w-full  flex gap-1 flex-col ">
-              <h1 className="text-green-900 main_h1_two text-7xl max-sm:text-3xl font-extrabold">
+        <div className="relative w-1/2  max-md:w-full   max-sm:w-full">
+          <div className="relative  flex justify-center items-center  max-sm:px-4 max-sm:py-4 py-24 max-md:px-4 px-20 h-full">
+            <div className="relative w-full  flex gap-1  flex-col ">
+              <h1 className="text-black main_h1_two text-7xl max-sm:text-3xl font-extrabold">
                 {" "}
-                I'm <em className="text-black text-5xl ">TOHEEB. </em>
+                I'm <em className="text-amber-500 text-5xl ">TOHEEB. </em>
               </h1>
               <p className=" text-5xl max-sm:text-2xl italic font-semibold">
                 {" "}
@@ -61,8 +61,8 @@ main_image  h-[35rem] rounded-2xl"
               </div>
             </div>
           </div>
-          <div className="relative px-20 max-sm:w-full w-1/2  max-sm:px-2 py-2">
-            <button className="px-5 w-full   rounded-md py-3 font-bold bg-amber-300 text-green-800   text-2xl max-sm:w-full max-sm:text-xl max-sm:py-1 hover:text-green-900  hover:bg-lime-400   ">
+          <div className="relative px-20 max-sm:w-full w-1/2 max-md:w-full  max-sm:px-2 py-2">
+            <button className="px-5 w-full   rounded-md py-3 font-bold bg-amber-200 text-green-800   text-2xl max-sm:w-full max-sm:text-xl max-sm:py-1 hover:text-lime-500  hover:bg-lime-400   ">
               Let's get started
               <ArrowRight className="inline text-3xl   arrow-indicator text-green-950" />
             </button>

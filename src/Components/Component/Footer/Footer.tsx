@@ -16,16 +16,20 @@ const Footer = () => {
                 </h1>
                 <div className="flex items-center mt-2 gap-2 justify-start">
                   <Linkedln
-                    className="text-2xl text-white"
-                    onClick={() => window.open("")}
+                    className="text-4xl text-white"
+                    onClick={() =>
+                      window.open("https://www.linkedin.com/in/toyeebadebisi1/")
+                    }
                   />
                   <Twitter
-                    className="text-2xl text-white"
+                    className="text-4xl text-white"
                     onClick={() => window.open("")}
                   />
                   <Instagram
-                    className="text-2xl text-white"
-                    onClick={() => window.open("")}
+                    className="text-4xl text-white"
+                    onClick={() =>
+                      window.open("https://www.instagram.com/teone.live")
+                    }
                   />
                 </div>
               </div>
@@ -35,26 +39,46 @@ const Footer = () => {
                   {" "}
                   Useful links
                 </h1>
-                <div className="flex items-start flex-col justify-start">
-                  <p className="text-white text-xl max-sm:text-sm">
-                    Terms of use.
-                  </p>
-                  <p className="text-white text-xl max-sm:text-sm">Policies</p>
-                  <p className="text-white text-xl max-sm:text-sm">Others</p>
+                <div className="flex items-start gap-3 flex-col justify-start">
+                  <a
+                    href="https://thenetzeroguy.com"
+                    className="text-white text-xl max-sm:text-sm no-underline"
+                  >
+                    Net zero
+                  </a>
+                  <a
+                    href="#"
+                    className="text-white text-xl max-sm:text-sm no-underline"
+                  >
+                    Terms and Policies
+                  </a>
+                  <a
+                    href="#"
+                    className="text-white text-xl max-sm:text-sm no-underline"
+                  >
+                    Others
+                  </a>
                 </div>
               </div>
 
-              <div className="relative flex flex-col">
+              <div className="relative flex  flex-col">
                 <h1 className="text-white text-xl max-sm:text-sm font-bold">
                   {" "}
                   Community
                 </h1>
-                <div className="flex items-start flex-col justify-start">
-                  <p className="text-white text-xl max-sm:text-sm">Blog</p>
-                  <p className="text-white text-xl max-sm:text-sm">Ideas</p>
-                  <p className="text-white text-xl max-sm:text-sm">
-                    Developers
-                  </p>
+                <div className="flex items-start gap-3 flex-col justify-start">
+                  <a
+                    href="https://thenetzeroguy.com"
+                    className="text-white text-xl max-sm:text-sm no-underline"
+                  >
+                    Blog
+                  </a>
+                  <a
+                    href="#"
+                    className="text-white text-xl max-sm:text-sm no-underline"
+                  >
+                    Media stories
+                  </a>
                 </div>
               </div>
             </div>
