@@ -7,27 +7,8 @@ const ReadMorePage = () => {
   const [posts] = useState([
     {
       id: 1,
-      title: "The heist",
-      descr:
-        "This is soome sort of short description about this contents and what you are like to get when you open it.",
-    },
-    {
-      id: 2,
-      title: "The Kingdom of heaven",
-      descr:
-        "This is soome sort of short description about this contents and what you are like to get when you open it.",
-    },
-    {
-      id: 21,
-      title: "The fairy tales",
-      descr:
-        "This is soome sort of short description about this contents and what you are like to get when you open it.",
-    },
-    {
-      id: 4,
-      title: "The heist Mullock",
-      descr:
-        "This is soome sort of short description about this contents and what you are like to get when you open it.",
+      title: "The  Climate Change Forum",
+      descr: "New Castle City Council  Climate Change Forum",
     },
   ]);
 
