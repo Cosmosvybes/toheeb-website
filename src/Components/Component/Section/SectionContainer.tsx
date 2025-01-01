@@ -49,7 +49,7 @@ const SectionContainer = ({
               <Globe className="text-lime-600 text-3xl inline" />
             </div>
 
-            <ul className="list-disc">
+            <ul className="list-disc mt-3">
               <li className="text-2xl max-sm:text-xl">
                 Social Media - Content Shooting - Savyll & Influencer relations
               </li>
@@ -72,7 +72,7 @@ const SectionContainer = ({
             <strong className="text-2xl max-sm:text-xl text-lime-600">
               Campaigns <Speaker className="text-ambr-500 text-3xl inline" />
             </strong>
-            <ul className="list-disc">
+            <ul className="list-disc mt-3">
               <li className="text-2xl max-sm:text-xl">
                 {" "}
                 Islington Robotica -{" "}
@@ -90,7 +90,7 @@ const SectionContainer = ({
               Certifications & Educations.
               <Reward className="text-ambr-500 text-3xl inline" />
             </strong>
-            <ul className="list-disc">
+            <ul className="list-disc mt-3">
               <li className="text-2xl max-sm:text-xl">
                 {" "}
                 Msc Digital Marketing - Certified by York St John University
