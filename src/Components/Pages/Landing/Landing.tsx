@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import toheeb from "../../../assets/toheeb.jpg";
 import headShot from "../../../assets/headshot.jpg";
 import digitalImage from "../../../assets/digitalImage.jpg";
-import Partners from "../../Component/Partners/Partners";
+// import Partners from "../../Component/Partners/Partners";
 const Landing = () => {
   useEffect(() => {
     return window.scrollTo({ top: 0, behavior: "smooth" });
@@ -48,10 +48,6 @@ main_image  h-[35rem] rounded-2xl"
                 Welcome to an embodiment of;
               </p>
               <div className="relative w-full gap-4  max-sm:px-2 flex justify-start   items-center  h-24">
-                <h1 className="text-black max-sm:text-sm animate-bounce duration-1000">
-                  {" "}
-                  NET ZERO •
-                </h1>
                 <h1 className="text-green-600 max-sm:text-sm animate-bounce duration-700">
                   DIGITAL •
                 </h1>
@@ -98,16 +94,8 @@ main_image  h-[35rem] rounded-2xl"
         shortTitle={"Digital Works and Achievements"}
         headline="DIGITAL"
       />
-      <ReverseSection
-        showLink={true}
-        p1={`My Journey with capturing the amount of GHGs commenced in 2024. 
-Inspired by the course below:`}
-        showReadMore={false}
-        shortTitle={"CREATIVITY JOURNEY"}
-        headline="NET ZERO"
-        img={newToheeb}
-      />{" "}
-      <Partners />
+     
+      {/* <Partners /> */}
     </>
   );
 };
